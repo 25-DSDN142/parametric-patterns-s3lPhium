@@ -2,7 +2,7 @@
 
 //base values = 80
 let rect_width  = 40;
-let rect_height = 40;
+let rect_height = 80;
 
 //base values = 80
 let tri_width = 80;
@@ -88,7 +88,7 @@ triangle(x, y, x, y + tri_height, x + tri_width, y);
 
 function whiteDots() {
   // return();
-  if (rect_width > 60 );
+  if (rect_width <= 60)
     ellipse(55, 40, circle_height, circle_height);
     ellipse(155, 140, circle_width, circle_height);
 
