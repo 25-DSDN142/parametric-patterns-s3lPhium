@@ -10,45 +10,253 @@ Your final settings.txt will look something like this when you are finished:
 Wallpaper 1:
 
 //your parameter variables go here!
-let rect_width  = 20;
-let rect_height = 20;
-let paramter1 = 10;
-let paramter2 = true;
-let paramter3 = 50; 
-let paramter4 = 0; 
-let paramter5 = 60;
+
+let rect_width  = 80;
+let rect_height = 80;
+
+let tri_width = 80;
+let tri_height = 80;
+
+//change to set the outlines to go around all four sqaures or make a cross
+let fourSqaures = false;
+let showwhiteCross = true;
+
 
 function setup_wallpaper(pWallpaper) {
+  //pWallpaper.output_mode(DEVELOP_GLYPH);
   pWallpaper.output_mode(GRID_WALLPAPER);
+
   pWallpaper.resolution(NINE_LANDSCAPE);
   pWallpaper.show_guide(false); //set this to false when you're ready to print
 
   //Grid settings
-  pWallpaper.grid_settings.cell_width  = 100;
-  pWallpaper.grid_settings.cell_height = 100;
-  pWallpaper.grid_settings.row_offset  = 50;
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 0;
 }
 
 /////////////////////////////////
 
 Wallpaper 2:
 
-//your parameter variables go here!
-let rect_width  = 10;
-let rect_height = 10;
-let paramter1 = 20;
-let paramter2 = false;
-let paramter3 = 50; 
-let paramter4 = 80; 
-let paramter5 = 30;
 
-function setup_wallpaper(pWallpaper) {
+//base values = 80
+let rect_width  = 60;
+let rect_height = 60;
+
+//base values = 80
+let tri_width = 40;
+let tri_height = 40;
+
+//change to set the outlines to go around all four sqaures or make a cross
+let fourSqaures = false;
+let showwhiteCross = true;
+
+
+function setup_wallpaper(pWallpaper) 
+  //pWallpaper.output_mode(DEVELOP_GLYPH);
   pWallpaper.output_mode(GRID_WALLPAPER);
+
   pWallpaper.resolution(NINE_LANDSCAPE);
   pWallpaper.show_guide(false); //set this to false when you're ready to print
 
   //Grid settings
-  pWallpaper.grid_settings.cell_width  = 100;
-  pWallpaper.grid_settings.cell_height = 100;
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 0;
+
+Wallpaper 3:
+
+//base values = 80
+let rect_width  = 80;
+let rect_height = 20;
+
+//base values = 80
+let tri_width = 50;
+let tri_height = 55;
+
+//change to set the outlines to go around all four sqaures or make a cross
+let fourSqaures = true;
+let showwhiteCross = false;
+
+
+function setup_wallpaper(pWallpaper) {
+  //pWallpaper.output_mode(DEVELOP_GLYPH);
+  pWallpaper.output_mode(GRID_WALLPAPER);
+
+  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 0;
+}
+
+Wallpaper 4:
+
+//base values = 80
+let rect_width  = 30;
+let rect_height = 20;
+
+//base values = 80
+let tri_width = 13;
+let tri_height = 60;
+
+//change to set the outlines to go around all four sqaures or make a cross
+let fourSqaures = true;
+let showwhiteCross = false;
+
+
+function setup_wallpaper(pWallpaper) {
+  //pWallpaper.output_mode(DEVELOP_GLYPH);
+  pWallpaper.output_mode(GRID_WALLPAPER);
+
+  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 0;
+}
+
+Wallpaper 5:
+
+//your parameter variables go here!
+
+//base values = 80
+let rect_width  = 80;
+let rect_height = 50;
+
+//base values = 80
+let tri_width = 20;
+let tri_height = 20;
+
+//change to set the outlines to go around all four sqaures or make a cross
+let fourSqaures = false;
+let showwhiteCross = true;
+
+
+function setup_wallpaper(pWallpaper) {
+  //pWallpaper.output_mode(DEVELOP_GLYPH);
+  pWallpaper.output_mode(GRID_WALLPAPER);
+
+  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 0;
+}
+
+Wallpaper 6:
+//base values = 80
+let rect_width  = 70;
+let rect_height = 30;
+
+//base values = 80
+let tri_width = 50;
+let tri_height = 10;
+
+//change to set the outlines to go around all four sqaures or make a cross
+let fourSqaures = false;
+let showwhiteCross = true;
+
+
+function setup_wallpaper(pWallpaper) {
+  //pWallpaper.output_mode(DEVELOP_GLYPH);
+  pWallpaper.output_mode(GRID_WALLPAPER);
+
+  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 0;
+}
+
+Wallpaper 7:
+//your parameter variables go here!
+
+//base values = 80
+let rect_width  = 20;
+let rect_height = 70;
+
+//base values = 80
+let tri_width = 25;
+let tri_height = 60;
+
+//change to set the outlines to go around all four sqaures or make a cross
+let fourSqaures = false;
+let showwhiteCross = true;
+
+
+function setup_wallpaper(pWallpaper) {
+  //pWallpaper.output_mode(DEVELOP_GLYPH);
+  pWallpaper.output_mode(GRID_WALLPAPER);
+
+  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 0;
+}
+
+Wallpaper 8:
+//base values = 80
+let rect_width  = 30;
+let rect_height = 80;
+
+//base values = 80
+let tri_width = 30;
+let tri_height = 75;
+
+//change to set the outlines to go around all four sqaures or make a cross
+let fourSqaures = true;
+let showwhiteCross = false;
+
+
+function setup_wallpaper(pWallpaper) {
+  //pWallpaper.output_mode(DEVELOP_GLYPH);
+  pWallpaper.output_mode(GRID_WALLPAPER);
+
+  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 0;
+}
+
+Wallpaper 9:
+//base values = 80
+let rect_width  = 80;
+let rect_height = 80;
+
+//base values = 80
+let tri_width = 70;
+let tri_height = 30;
+
+//change to set the outlines to go around all four sqaures or make a cross
+let fourSqaures = true;
+let showwhiteCross = false;
+
+
+function setup_wallpaper(pWallpaper) {
+  //pWallpaper.output_mode(DEVELOP_GLYPH);
+  pWallpaper.output_mode(GRID_WALLPAPER);
+
+  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
   pWallpaper.grid_settings.row_offset  = 0;
 }

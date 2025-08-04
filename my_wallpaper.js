@@ -8,29 +8,22 @@ let rect_height = 80;
 let tri_width = 80;
 let tri_height = 80;
 
-//base values = 20
-let circle_height = 10;
-let circle_width = 10;
-
-//base values = 50
-let circle_positionX = 50;
-let circle_positionY = 50;
-
-
-
+//change to set the outlines to go around all four sqaures or make a cross
+let fourSqaures = false;
+let showwhiteCross = true;
 
 
 function setup_wallpaper(pWallpaper) {
   //pWallpaper.output_mode(DEVELOP_GLYPH);
   pWallpaper.output_mode(GRID_WALLPAPER);
-  
-  pWallpaper.resolution(FIT_TO_SCREEN);
+
+  pWallpaper.resolution(NINE_LANDSCAPE);
   pWallpaper.show_guide(false); //set this to false when you're ready to print
 
   //Grid settings
   pWallpaper.grid_settings.cell_width  = 200;
   pWallpaper.grid_settings.cell_height = 200;
-  pWallpaper.grid_settings.row_offset  = 50;
+  pWallpaper.grid_settings.row_offset  = 0;
 }
 
 function wallpaper_background() {
@@ -45,6 +38,8 @@ greyRect(110, 110 );
 pinkRect(10, 110);
 blueRect(110, 10);
 whiteLines();
+whiteOutlineFour();
+whiteCross();
 
 }
 
@@ -93,6 +88,7 @@ fill(74, 139, 235);
 triangle(x, y, x, y + tri_height, x + tri_width, y);
 hatchTriBlue(x, y, tri_width, tri_height, 10)
 
+
 }
 
 function whiteLines() {
@@ -130,3 +126,56 @@ function hatchTriPink(x, y, w, h, spacing = 5) {
   }
 
 }
+
+
+function whiteOutlineFour() {
+  if (fourSqaures == true) {
+    stroke("white")
+    strokeWeight(5);
+    rect(100, 100, 100, 100)
+    rect(0, 0, 100, 100)
+    rect(0, 100, 100, 100)
+    rect(100, 0, 100, 100)
+    stroke("black")
+    strokeWeight(2);
+    rect(100, 100, 100, 100)
+    rect(0, 0, 100, 100)
+    rect(0, 100, 100, 100)
+      rect(100, 0, 100, 100)
+  }
+}
+
+function whiteCross() {
+  if (showwhiteCross == true) {
+
+    //bottom
+    stroke("white")
+    strokeWeight(5);
+    line(0, 120, 0, 280);
+    line(-80, 200, 80, 200);
+
+    stroke("black")
+    strokeWeight(2);
+    line(0, 120, 0, 280);
+    line(-80, 200, 80, 200);
+
+    //top right
+    stroke("white");
+    strokeWeight(5);
+    line(120, 0, 280, 0);
+    line(200, 80, 200, -80)
+   
+
+    stroke("black")
+    strokeWeight(2);
+    line(120, 0, 280, 0);
+    line(200, 80, 200, -80)
+
+  }
+}
+
+
+
+
+
+
